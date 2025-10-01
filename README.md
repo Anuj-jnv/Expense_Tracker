@@ -45,10 +45,7 @@ expense-tracker/
 git clone https://github.com/Anuj-jnv/Expense_Tracker.git
 cd Expense_Tracker
 
-2. Install dependencies (if any):
-pip install -r requirements.txt
-
-3.  Run the application:
+2.  Run the application:
  python main.py
 
 ---
@@ -108,6 +105,7 @@ Examples SQL
     main.py → runs the program and links all modules.
 
     All functions include docstrings and inline comments for clarity.
+
 
 
 
