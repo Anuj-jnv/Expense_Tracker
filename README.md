@@ -19,6 +19,10 @@ A **command-line Python application** to help users manage daily expenses, track
 - Fully **Dockerized** for simple setup and execution.
 
 ---
+### ⚠️ Note About Hardcoded Values
+
+> For demonstration purposes, some expenses, users, and budgets are **hardcoded** in `main.py`.  
+> You can modify or add new values when running the application to test different scenarios.
 
 ## 📂 Project Structure
 
@@ -105,6 +109,7 @@ Examples SQL
     main.py → runs the program and links all modules.
 
     All functions include docstrings and inline comments for clarity.
+
 
 
 
