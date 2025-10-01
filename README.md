@@ -23,15 +23,15 @@ A **command-line Python application** to help users manage daily expenses, track
 ## 📂 Project Structure
 
 expense-tracker/
-│── main.py # Entry point of the application
-│── database.py # Handles SQLite database operations
-│── expense.py # Expense class and logic
-│── alerts.py # Budget alert handling
-│── utils.py # Helper functions for calculations
-│── expenses.db # SQLite database file (auto-created)
-│── requirements.txt # Python dependencies
-│── Dockerfile # Docker build file
-│── README.md # Project documentation
+├── main.py # Entry point of the application
+├── database.py # Handles SQLite database operations
+├── expense.py # Expense class and logic
+├── alerts.py # Budget alert handling
+├── utils.py # Helper functions for calculations and summaries
+├── expenses.db # SQLite database file (auto-created)
+├── requirements.txt # Python dependencies
+├── Dockerfile # Docker build file
+└── README.md # Project documentation
 
 
 ---
@@ -108,6 +108,7 @@ utils.py → helper functions for calculations and summaries.
 main.py → runs the program and links all modules.
 
 All functions include docstrings and inline comments for clarity.
+
 
 
 
