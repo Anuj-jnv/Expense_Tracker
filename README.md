@@ -42,8 +42,8 @@ expense-tracker/
 
 1. Clone the repository:  
 ```bash
-git clone https://github.com/your-username/expense-tracker.git
-cd expense-tracker
+git clone https://github.com/Anuj-jnv/Expense_Tracker.git
+cd Expense_Tracker
 
 2. Install dependencies (if any):
 pip install -r requirements.txt
@@ -56,24 +56,24 @@ pip install -r requirements.txt
 ### 🔹 2. Run with Docker
 
 1. Build Docker Image
-    docker build -t expense-tracker .
+    docker build -t Expense_Tracker .
 
 2. Run the Application
-    docker run --rm -it expense-tracker
+    docker run --rm -it Expense_Tracker
 
 ✅ Test Steps
 
-1. Run the app → database resets automatically.
+   1. Run the app → database resets automatically.
 
-2. Add users and expenses → verify they are stored in SQLite.
+   2. Add users and expenses → verify they are stored in SQLite.
 
-3. Set budgets → confirm alerts appear when thresholds are reached.
+   3. Set budgets → confirm alerts appear when thresholds are reached.
 
-4. Add group/shared expenses → verify totals per user.
+   4. Add group/shared expenses → verify totals per user.
 
-5. Restart → database should reset.
+   5. Restart → database should reset.
 
-6. Run via Docker → confirm same behavior.
+   6. Run via Docker → confirm same behavior.
 
 🗃️ Database & SQL
 
@@ -86,28 +86,29 @@ Examples SQL
    CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT UNIQUE NOT NULL
-);
+    );
 
-CREATE TABLE IF NOT EXISTS expenses (
+   CREATE TABLE IF NOT EXISTS expenses (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id INTEGER,
     amount REAL NOT NULL,
     category TEXT NOT NULL,
     description TEXT,
     date TEXT DEFAULT CURRENT_TIMESTAMP
-);
+    );
 
 📝 Documentation in Code
 
-database.py → functions for users, expenses, budgets.
+    database.py → functions for users, expenses, budgets.
 
-alerts.py → handles budget alerts.
+    alerts.py → handles budget alerts.
 
-utils.py → helper functions for calculations and summaries.
+    utils.py → helper functions for calculations and summaries.
 
-main.py → runs the program and links all modules.
+    main.py → runs the program and links all modules.
 
-All functions include docstrings and inline comments for clarity.
+    All functions include docstrings and inline comments for clarity.
+
 
 
 
